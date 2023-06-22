@@ -165,6 +165,7 @@ body {
 
 .main-container {
     width: 90%;
+    min-height: 64vh;
     margin: 6.5rem auto;
 }
 
