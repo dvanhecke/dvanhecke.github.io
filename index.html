@@ -8,7 +8,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="assets/css/home.css">
         <title>Duarte Van Hecke</title>
     </head>
 
@@ -16,7 +20,7 @@
         <header>
             <div class="header-container">
                 <a href="./"><img src="./assets/img/logo.png" alt="home" id="logo"></a>
-                <svg stroke="var(--primary-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="250">
+                <svg stroke="var(--clr-primary)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="250">
                     <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
                         d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"></path>
                 </svg>
@@ -39,13 +43,17 @@
                         scuba diving. Both sports ask for precission and perseverance just like web development. So this
                         is what I stand for.</p>
                     <a href="./about" class="accent-button">Get to know me</a>
-                    <img src="./assets/img/picture-of-me-fencing.jpeg" alt="Duarte" loading="lazy">
-                    <img src="./assets/img/picture-of-me-scuba-diving.jpeg" alt="Duarte" loading="lazy">
+                    <div class="lazy-loading" style="background: url('assets/img/picture-of-me-fencing_small.jpeg">
+                        <img src="./assets/img/picture-of-me-fencing.jpeg" alt="Duarte" loading="lazy">
+                    </div>
+                    <div class="lazy-loading" style="background: url('assets/img/picture-of-me-scuba-diving_small.jpeg')">
+                        <img src="./assets/img/picture-of-me-scuba-diving.jpeg" alt="Duarte" loading="lazy">
+                    </div>
                 </section>
-                <section class="projects">
+                <section class="projects flow">
                     <h2>My best projects</h2>
                     <ul class="projects-list">
-                        <li class="project">
+                        <li class="project flow">
                             <h3>project1</h3>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, corrupti dignissimos
@@ -56,7 +64,7 @@
                             <img src="https://via.placeholder.com/300x200" alt="project1">
                             <a href="https://wordpress.duartevanhecke.ikdoeict.be">project1</a>
                         </li>
-                        <li class="project">
+                        <li class="project flow">
                             <h3>project2</h3>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, corrupti dignissimos
@@ -67,7 +75,7 @@
                             <img src="https://via.placeholder.com/300x200" alt="project2">
                             <a href="https://wordpress.duartevanhecke.ikdoeict.be">project2</a>
                         </li>
-                        <li class="project">
+                        <li class="project flow">
                             <h3>project3</h3>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, corrupti dignissimos
@@ -78,7 +86,7 @@
                             <img src="https://via.placeholder.com/300x200" alt="project3">
                             <a href="https://wordpress.duartevanhecke.ikdoeict.be">project3</a>
                         </li>
-                        <li class="project">
+                        <li class="project flow">
                             <h3>project4</h3>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, corrupti dignissimos
@@ -91,7 +99,7 @@
                         </li>
                     </ul>
                 </section>
-                <section class="contact">
+                <section class="contact flow">
                     <h2>Want to work together?</h2>
                     <p>I'm looking for a studentjob ... I'm very keen on challenging projects ...</p>
                     <a href="./contact" class="accent-button">Contact me</a>
