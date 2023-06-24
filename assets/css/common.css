@@ -187,8 +187,30 @@ h1 {
 }
 
 .nav-links li a {
+    display: inline-block;
+    position: relative;
     color: var(--clr-surface);
     text-decoration: none;
+    width: 10rem;
+    margin-block: .5rem;
+    transition: transform .5s ease-in-out;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+   transform: scale(1.5);
+}
+
+.nav-links .active::after {
+    content: "";
+    width: 1rem;
+    aspect-ratio: 1;
+    background: inherit;
+    position: absolute;
+    top: 80%;
+    left: calc(50% - .5rem);
+    border-radius: 50%;
+    border: .25rem solid;
 }
 
 .nav-links li a:not(.accent-button) {
