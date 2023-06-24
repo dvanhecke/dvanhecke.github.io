@@ -1,0 +1,23 @@
+.about {
+    background-color: var(--clr-text);
+    color: var(--clr-surface);
+    display: grid;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.about a {
+    width: max-content;
+    align-self: center;
+    justify-self: center;
+    padding: 2rem;
+    border-radius: 25px;
+    transition: transform .5s ease-in-out;
+}
+
+.about .accent-button:hover,
+.about .accent-button:focus {
+    transform: scale(1.2);
+    color: var(--clr-surface);
+}
+

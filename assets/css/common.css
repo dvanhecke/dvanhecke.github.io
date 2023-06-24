@@ -18,6 +18,10 @@ img {
     display: block;
 }
 
+img:not(#logo) {
+    -webkit-mask-image: linear-gradient(black, transparent);
+}
+
 .visually-hidden {
     /* Contain text within 1px box */
     height: 1px;
@@ -42,6 +46,18 @@ img {
 
 .flow>*+* {
     margin-top: var(--flow-space, 1em);
+}
+
+.lazy-loading {
+    background-size: cover;
+    background-position: center;
+}
+
+.lazy-loading > img {
+    object-position: center;
+    object-fit: center;
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 :root {
@@ -131,6 +147,7 @@ h1 {
     position: fixed;
     top: 0;
     background-color: var(--clr-surface);
+    z-index: 1;
 }
 
 #menu {
