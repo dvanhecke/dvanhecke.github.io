@@ -4,6 +4,7 @@
     display: grid;
     gap: .5rem;
     padding: 1rem;
+    position: relative;
 }
 
 .about a {
@@ -15,9 +16,40 @@
     transition: transform .5s ease-in-out;
 }
 
-.about .accent-button:hover,
-.about .accent-button:focus {
+.accent-button:hover,
+.accent-button:focus {
     transform: scale(1.2);
+    color: var(--clr-text);
+}
+
+.projects-list {
+    list-style: none;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.project img {
+    order: -1;
+}
+
+.project a {
+    align-self: center;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    text-align: center;
+    background-color: var(--clr-text);
     color: var(--clr-surface);
+    border-radius: .5rem;
+    transition: transform .3s ease-in-out;
+}
+
+.project a:hover,
+.project a:focus {
+    transform: scale(1.2);
 }
 
