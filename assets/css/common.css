@@ -23,19 +23,13 @@ img:not(#logo) {
 }
 
 .visually-hidden {
-    /* Contain text within 1px box */
     height: 1px;
     overflow: hidden;
     width: 1px;
-    /* Keep the layout */
     position: absolute;
-    /* Remove any visible trace (e.g. background color) */
     clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
-    /* browsers in the future */
-    /* Prevent the screen reader to skip spaces between words */
     white-space: nowrap;
 }
 
@@ -65,6 +59,38 @@ img:not(#logo) {
     width: 100%;
     aspect-ratio: 1/1;
 }
+
+.projects-list {
+    list-style: none;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.project img {
+    order: -1;
+}
+
+.project a {
+    align-self: center;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    text-align: center;
+    background-color: var(--clr-text);
+    color: var(--clr-surface);
+    border-radius: .5rem;
+    transition: transform .3s ease-in-out;
+}
+
+.project a:hover,
+.project a:focus {
+    transform: scale(1.2);
+}
+
 
 :root {
     --clr-accent: linear-gradient(-45deg, #38ADAE, #CD295A);
