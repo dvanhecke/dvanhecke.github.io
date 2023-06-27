@@ -1,0 +1,18 @@
+.lazy-loading,
+.lazy-loading img {
+    border-radius: 50%;
+}
+
+.lazy-loading {
+    position: relative;
+}
+
+.lazy-loading::after {
+    content: "";
+    background: var(--clr-text);
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    transform: translateX(-5%);
+    z-index: -1;
+}
