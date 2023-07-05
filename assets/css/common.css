@@ -244,6 +244,7 @@ h1 {
     width: 10rem;
     margin-block: .5rem;
     transition: transform .5s ease-in-out;
+    border-radius: 1rem;
 }
 
 .nav-links li a:hover,
