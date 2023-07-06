@@ -112,9 +112,6 @@ img:not(#logo) {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --clr-accent: linear-gradient(-45deg, #38ADAE, #CD295A);
-        --clr-primary: #213A48;
-        --clr-secondary: #5F2F0C;
         --clr-surface: #111111;
         --clr-text: #EEEEEE;
     }
