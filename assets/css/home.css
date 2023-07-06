@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.about p {
+    text-align: center;
+}
+
 .about a {
     width: max-content;
     align-self: center;

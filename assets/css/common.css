@@ -267,7 +267,7 @@ h1 {
 
 /* MAIN */
 .main-container {
-    width: min(100% - 3rem, 65ch);
+    width: min(100% - 3rem, 85ch);
     margin-inline: auto;
     margin-top: 7rem;
 }
