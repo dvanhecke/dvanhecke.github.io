@@ -30,35 +30,27 @@
                 </nav>
             </div>
         </header>
-        <main class="main-container">
-                <form action="" method="post">
-                    <fieldset>
+        <main class="main-container flow">
+                <form action="" method="">
+                    <fieldset class="flow">
                         <legend>Contact me</legend>
-                        <label for="name">Your name</label>
-                        <input type="text" id="name" name="name" value="" class="input-text"/>
-                        <label for="email">Your email</label>
-                        <input type="text" id="email" name="email" value="" class="input-text"/>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="5" cols="40"></textarea>
-                        <fieldset class="found">
-                            <legend>How did you find me</legend>
-                            <label for="friends">Friends</label>
-                            <input type="radio" name="found" id="friends" value="friends">
-                            <label for="social">Social media</label>
-                            <input type="radio" name="found" id="social" value="social-media">
-                            <label for="google">Google</label>
-                            <input type="radio" name="found" id="google" value="google">
-                            <label for="other">Other</label>
-                            <input type="radio" name="found" id="other" value="other">
+                        <label for="name">Your full name</label>
+                        <input type="text" id="name" name="name" value="" class="input-text" pattern="^[a-zA-Z\\s]+" required/>
+                        <label for="telephone">Your phone number</label>
+                        <input id="telephone" type="tel" name="telephone" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" required>
+                        <label for="email">your email</label>
+                        <input type="email" id="email" name="email" value="" class="input-text" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required/>
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" rows="5" cols="40" required></textarea>
                         </fieldset>
-                        <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur" class="accent-button"/>
+                        <input type="submit" id="btnsubmit" name="btnsubmit" value="submit" class="accent-button"/>
                     </fieldset>
                 </form>
         </main>
         <footer>
             <ul>
                 <li>
-                    <p>(c) 2022 Duarte Van Hecke &copy;</p>
+                    <p>(c) 2022 duarte van hecke &copy;</p>
                 </li>
                 <li>
                     <a href="https://discord.com/users/359653203568099331" target="_blank">
@@ -71,11 +63,11 @@
                     </a>
                 </li>
                 <li>
-                    <p>Wetteren, Belgium</p>
+                    <p>wetteren, belgium</p>
                 </li>
             </ul>
         </footer>
-        <!--<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="dvanhecke" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>-->
+        <!--<script data-name="bmc-widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="dvanhecke" data-description="support me on buy me a coffee!" data-message="" data-color="#5f7fff" data-position="right" data-x_margin="18" data-y_margin="18"></script>-->
         <script src="https://kit.fontawesome.com/414b2d179b.js" crossorigin="anonymous"></script>
         <script src="../assets/js/burger.js"></script>
     </body>
